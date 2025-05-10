@@ -210,19 +210,19 @@ footer {
   width: 100%;
   height: 100vh;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .background-video {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  transform: translate(-50%, -50%);
-  border-radius: 20px; /* biar sudutnya gak kaku */
+  margin-top: 10px;
+  width: 20%;
+  height: auto;
+  max-height: 100vh;
+  border-radius: 20px;
   filter: brightness(0.9) saturate(1.2);
   object-fit: cover;
-  z-index: -1;
 }
 /*responsivenya woy*/
 @media (max-width: 500px) {
@@ -232,6 +232,14 @@ footer {
     align-items: center;
   }
 
+  .background-video {
+  width: 70%;
+  height: auto;
+  max-height: 100vh;
+  border-radius: 20px;
+  filter: brightness(0.9) saturate(1.2);
+  object-fit: cover;
+}
   .menu-toggle {
     display: block;
   }
