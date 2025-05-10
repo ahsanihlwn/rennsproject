@@ -10,22 +10,23 @@ body {
 
 .search-box {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 #searchInput {
-  padding: 10px 15px;
-  width: 60%;
+  padding: 12px 12px;
+  width: 90%;
   max-width: 400px;
   font-size: 16px;
   background-color: rgba(255, 255, 255, 0.1); /* transparan putih tipis */
-  backdrop-filter: blur(12px);
+  backdrop-filter: blur(60px);
   -webkit-backdrop-filter: blur(12px); /* buat Safari */
   border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* garis bawah halus */
   border: 0px solid #EEEEEE;
   border-radius: 80px;
   outline: none;
   transition: 0.3s;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 #searchInput:focus {
@@ -103,6 +104,20 @@ nav a:hover {
   color: white;
   text-align: center;
   padding: 80px 20px;
+}
+
+.screenshoot {
+  width: 800px;
+  margin-top: 50px;
+  object-fit: cover;
+}
+
+.icon_preview {
+  display: block;
+  width: 400px;
+  margin: 0px auto 0;
+  margin-top: 80px;
+  object-fit: cover;
 }
 
 .hero h1 {
@@ -190,7 +205,25 @@ footer {
   color: white;
   cursor: pointer;
 }
+.hero-video {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
 
+.background-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  transform: translate(-50%, -50%);
+  border-radius: 20px; /* biar sudutnya gak kaku */
+  filter: brightness(0.9) saturate(1.2);
+  object-fit: cover;
+  z-index: -1;
+}
 /*responsivenya woy*/
 @media (max-width: 500px) {
   header {
@@ -231,4 +264,16 @@ footer {
     transform: none;
     box-shadow: none;
   }
+  .screenshoot {
+  width: 320px;
+  object-fit: cover;
+    justify-content: center;
+  align-items: center;
+}
+  .icon_preview {
+  width: 300px;
+  object-fit: cover;
+    justify-content: center;
+  align-items: center;
+}
 }
