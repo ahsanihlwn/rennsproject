@@ -29,6 +29,32 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.getromadmin {
+  margin-top: 80px;
+}
+
+.getrom { 
+  color: white;
+  padding: 15px 40px;
+  border-radius: 90px;
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(50px);
+  transition: all 0.6s;
+  text-decoration: none;
+  text-align: center;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.158);
+  margin: auto;
+}
+
+.getrom:hover {
+  color: #F5F9F9;
+  background-color: #9EBC8A;
+  cursor: pointer;
+}
+
+
 #searchInput:focus {
   color: #fff;
 }
@@ -97,7 +123,7 @@ nav a:hover {
 }
 
 .hero {
-  background: linear-gradient(to right, #537D5D, #9EBC8A);
+  background: linear-gradient(to right, #537d5d7d, #9ebc8a63);
   color: white;
   text-align: center;
   padding: 80px 20px;
@@ -243,6 +269,7 @@ footer {
     filter: brightness(0.9) saturate(1.2);
     object-fit: cover;
   }
+
 
   .menu-toggle {
     display: block;
