@@ -18,15 +18,15 @@ body {
   width: 90%;
   max-width: 400px;
   font-size: 16px;
-  background-color: rgba(255, 255, 255, 0.1); /* transparan putih tipis */
+  background-color: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(60px);
-  -webkit-backdrop-filter: blur(12px); /* buat Safari */
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* garis bawah halus */
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   border: 0px solid #EEEEEE;
   border-radius: 80px;
   outline: none;
   transition: 0.3s;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 #searchInput:focus {
@@ -34,11 +34,11 @@ body {
 }
 
 header {
-  background-color: rgba(255, 255, 255, 0.1); /* transparan */
+  background-color: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(50px);
-  -webkit-backdrop-filter: blur(50px); /* blur */
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* garis bawah*/
-  z-index: 999;
+  -webkit-backdrop-filter: blur(50px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  z-index: 100;
   color: white;
   display: flex;
   justify-content: space-between;
@@ -46,7 +46,6 @@ header {
   padding: 15px 30px;
   position: sticky;
   top: 0;
-  z-index: 100;
 }
 
 .logo {
@@ -55,14 +54,14 @@ header {
   gap: 10px;
   font-size: 20px;
   font-weight: 600;
-  color: #fff; 
+  color: #fff;
 }
 
 .logo-img {
   width: 40px;
   height: 40px;
-  border-radius: 50%; /* bikin jadi lingkaran */
-  object-fit: cover;  /* biar ga gepeng */
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 nav ul {
@@ -77,7 +76,6 @@ nav a {
   color: white;
   text-decoration: none;
   transition: 0.3s;
-  
 }
 
 nav a.active {
@@ -88,11 +86,10 @@ nav a.active {
   padding: 10px 20px;
 }
 
-
 nav a:hover {
-  background-color: rgba(255, 255, 255, 0.1); /* transparan */
+  background-color: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(50px);
-  -webkit-backdrop-filter: blur(50px); /* blur */
+  -webkit-backdrop-filter: blur(50px);
   transform: translateY(-3px) scale(1.03);
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.158);
   border-radius: 26px;
@@ -115,8 +112,7 @@ nav a:hover {
 .icon_preview {
   display: block;
   width: 400px;
-  margin: 0px auto 0;
-  margin-top: 80px;
+  margin: 80px auto 0;
   object-fit: cover;
 }
 
@@ -134,7 +130,7 @@ nav a:hover {
 .projects h2 {
   text-align: center;
   margin-bottom: 30px;
-  color: #ffF;
+  color: #fff;
 }
 
 .project-list {
@@ -144,49 +140,47 @@ nav a:hover {
 }
 
 .project-card {
-  background-color: rgba(255, 255, 255, 0.1); /* transparan */
+  background-color: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(50px);
-  -webkit-backdrop-filter: blur(50px); /* blur */
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* garis bawah*/
+  -webkit-backdrop-filter: blur(50px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   z-index: 999;
   color: white;
   padding: 20px;
   border-radius: 26px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .project-card a {
   display: inline-block;
   margin-top: 15px;
   padding: 10px 20px;
-  background-color: rgba(255, 255, 255, 0.1); /* transparan */
+  background-color: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(50px);
-  -webkit-backdrop-filter: blur(50px); /* blur */
-  border-bottom: 1px solid rgba(255, 255, 255, 0); /* garis bawah*/
+  -webkit-backdrop-filter: blur(50px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0);
   color: #fff;
   text-decoration: none;
   font-weight: 500;
   border-radius: 30px;
   transition: all 0.3s ease;
-
 }
 
 .project-card a:hover {
-  background-color: #9EBC8A;           /* warna pas hover */
+  background-color: #9EBC8A;
   transform: translateY(-3px) scale(1.03);
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.13);
 }
-
 
 .project-card h3 {
   margin-top: 0;
 }
 
 footer {
-  background-color: rgba(255, 255, 255, 0.1); /* transparan */
+  background-color: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(50px);
-  -webkit-backdrop-filter: blur(50px); /* blur */
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* garis bawah*/
+  -webkit-backdrop-filter: blur(50px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   text-align: center;
   padding: 30px 20px;
   margin-top: 50px;
@@ -205,11 +199,13 @@ footer {
   color: white;
   cursor: pointer;
 }
+
 .hero-video {
   position: relative;
   width: 100%;
   height: 100vh;
   overflow: hidden;
+  gap: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -224,7 +220,8 @@ footer {
   filter: brightness(0.9) saturate(1.2);
   object-fit: cover;
 }
-/*responsivenya woy*/
+
+/* RESPONSIVE */
 @media (max-width: 500px) {
   header {
     flex-direction: row;
@@ -232,14 +229,20 @@ footer {
     align-items: center;
   }
 
+  .hero-video {
+    gap: 20px;
+  }
+
   .background-video {
-  width: 70%;
-  height: auto;
-  max-height: 100vh;
-  border-radius: 20px;
-  filter: brightness(0.9) saturate(1.2);
-  object-fit: cover;
-}
+    margin-top: 0;
+    width: 40%;
+    height: auto;
+    max-height: 100vh;
+    border-radius: 20px;
+    filter: brightness(0.9) saturate(1.2);
+    object-fit: cover;
+  }
+
   .menu-toggle {
     display: block;
   }
@@ -272,16 +275,18 @@ footer {
     transform: none;
     box-shadow: none;
   }
+
   .screenshoot {
-  width: 320px;
-  object-fit: cover;
+    width: 320px;
+    object-fit: cover;
     justify-content: center;
-  align-items: center;
-}
+    align-items: center;
+  }
+
   .icon_preview {
-  width: 300px;
-  object-fit: cover;
+    width: 300px;
+    object-fit: cover;
     justify-content: center;
-  align-items: center;
-}
+    align-items: center;
+  }
 }
