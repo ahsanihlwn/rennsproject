@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Zenith ROM Download</title>
+  <link rel="stylesheet" href="../style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+  <!-- Header -->
+<header>
+  <div class="logo">
+    <img src="../logo.jpg" class="logo-img" />
+    Renn's Project
+  </div>
+  <div class="menu-toggle" id="menuToggle">
+  ☰
+</div>
+  <nav id="mainNav">
+    <ul>
+      <li><a href="../../index.html">Home</a></li>
+      <li><a href="../../rom.html">Get ROM</a></li>
+    </ul>
+  </nav>
+</header>
+
+  <!-- Project Section -->
+  <section class="projects" id="projects">
+    <div class="project-list">
+      <div class="project-card">
+        <img src="../screenshoot.png" class="screenshoot2">
+        <h3>Infinix Note 40s - Zenith 15</h3>
+        <p>Do not flash from XOS 14!</p>
+        <p>If you're currently on XOS 15, you can install directly via recovery (OrangeFox).</p>
+        <p>Dirty flash is supported if you're using an official ROM. However, always remember to back up your data!</p>
+        <a href="">Download (soon)</a>
+        <a href="https://android.googleapis.com/packages/ota-api/package/56117cbcb38f46028d50ba0c67286bc3ca5c894c.zip">Stock XOS 15 ROM</a>
+      </div>
+  </section>
+
+  <!-- Footer -->
+<script>
+  const searchInput = document.getElementById('searchInput');
+  const projectCards = document.querySelectorAll('.project-card');
+
+  searchInput.addEventListener('input', () => {
+    const query = searchInput.value.toLowerCase();
+    projectCards.forEach(card => {
+      const text = card.textContent.toLowerCase();
+      card.style.display = text.includes(query) ? 'block' : 'none';
+    });
+  });
+    const toggleBtn = document.getElementById("menuToggle");
+  const nav = document.getElementById("mainNav");
+
+  toggleBtn.addEventListener("click", () => {
+    nav.classList.toggle("show");
+  });
+    const menuToggle = document.getElementById("menuToggle");
+  const logo = document.querySelector(".logo");
+
+  menuToggle.addEventListener("click", () => {
+    logo.classList.toggle("hidden");
+  });
+</script>
+
+</body>
+</html>
