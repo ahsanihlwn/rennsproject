@@ -62,6 +62,7 @@
     <p>Gw gabut, jadi bikin ginian aja wkwk</p>
   </footer>
 <script>
+  // Fitur Search Project Card
   const searchInput = document.getElementById('searchInput');
   const projectCards = document.querySelectorAll('.project-card');
 
@@ -72,19 +73,18 @@
       card.style.display = text.includes(query) ? 'block' : 'none';
     });
   });
-    const toggleBtn = document.getElementById("menuToggle");
+
+  // Fitur Toggle Menu untuk Mobile
+  const toggleBtn = document.getElementById("menuToggle");
   const nav = document.getElementById("mainNav");
+  const logo = document.querySelector(".logo");
 
   toggleBtn.addEventListener("click", () => {
     nav.classList.toggle("show");
-  });
-    const menuToggle = document.getElementById("menuToggle");
-  const logo = document.querySelector(".logo");
-
-  menuToggle.addEventListener("click", () => {
-    logo.classList.toggle("hidden");
+    logo.classList.toggle("hidden"); // Logo disembunyikan/tampil saat nav dibuka/ditutup
   });
 </script>
+
 
 </body>
 </html>
