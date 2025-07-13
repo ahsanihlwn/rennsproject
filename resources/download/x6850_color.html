@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>OxygenOS ROM Download</title>
+  <link rel="stylesheet" href="../oxygen.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+<!-- Header -->
+<header>
+  <div class="logo">
+    <img src="resources/logo.jpg" class="logo-img" />
+    Renn's Project
+  </div>
+  <div class="menu-toggle" id="menuToggle">
+  ☰
+</div>
+  <nav id="mainNav">
+    <ul>
+      <li><a href="https://ahsanihlwn.github.io/rennsproject/index.html">Home</a></li>
+      <li><a href="https://ahsanihlwn.github.io/rennsproject/rom.html">Get ROM</a></li>
+    </ul>
+  </nav>
+</header>
+
+  <!-- Project Section -->
+  <section class="projects" id="projects">
+    <div class="project-list">
+      <div class="project-card">
+        <img src="../screenshoot_oxygen.png" class="screenshoot2">
+        <h3>Infinix Note 40 Pro - ColorOS 15</h3>
+        <p>You can just flash it via recovery</p>
+        <p>Don't forget to wipe data!</p>
+        <h6>Bug : Fod, Aod, Nfc, OIS, FaceID</h6>
+        <h5>Credit:</h6>
+        <h6>@ahsanihlwn - Renn's YT, @dadoby, @kaminarich, @xiaです, @shirayuki_428, @rama982</h6>
+        <h6></h6>
+        <a href="https://drive.google.com/file/d/1yN5w-h1Y2TlFGXOoUTTXbCrfnpaBokP0/view?usp=sharing">Download</a>
+      </div>
+  </section>
+
+  <!-- Footer -->
+<script>
+  const searchInput = document.getElementById('searchInput');
+  const projectCards = document.querySelectorAll('.project-card');
+
+  searchInput.addEventListener('input', () => {
+    const query = searchInput.value.toLowerCase();
+    projectCards.forEach(card => {
+      const text = card.textContent.toLowerCase();
+      card.style.display = text.includes(query) ? 'block' : 'none';
+    });
+  });
+    const toggleBtn = document.getElementById("menuToggle");
+  const nav = document.getElementById("mainNav");
+
+  toggleBtn.addEventListener("click", () => {
+    nav.classList.toggle("show");
+  });
+    const menuToggle = document.getElementById("menuToggle");
+  const logo = document.querySelector(".logo");
+
+  menuToggle.addEventListener("click", () => {
+    logo.classList.toggle("hidden");
+  });
+</script>
+
+</body>
+</html>
